@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RWD Grid</title>
+    <style>
+        
+        * 
+        {
+            box-sizing: border-box;
+        }  
+
+        .head 
+        {
+            color:rgb(20, 91, 152);
+             
+            background: rgb(205, 205, 151);
+            border:  inline;
+            padding:30px;
+            margin: 0 auto;
+            text-align: center;
+        }
+         
+        .nav
+        {
+            background-color: rgb(123, 187, 166);
+            font-weight: bold;
+            padding: 1% 5%;
+            text-align: left;
+           
+        }
+
+        .main
+        {
+            background: #5f4545;
+            color:aliceblue;
+            padding: 1% 5%;
+            
+        }
+
+        .aside
+        {
+            background: #e0b1b1;
+            color:rgb(40, 15, 225);
+            text-align: center;
+            padding:1% 5%;
+             
+        }
+
+        .footer
+        {
+            background: #cc6e03;
+            color:black;
+            text-align: center;
+            padding:1% 5%;
+        }
+
+       .nav a
+        {
+            text-align: left;
+            text-decoration: none;
+            color: rgb(93, 22, 22);
+            font-size: larger;
+            font-weight: bold;
+        }
+
+        .nav2 a
+        {
+            text-align: left;
+            text-decoration: none;
+            color: rgb(93, 22, 22);
+            font-size: larger;
+            font-weight: bold;
+        }
+         
+
+        ul
+        {
+             list-style-type: none;
+
+        }
+
+        [class*="col-"]
+        {
+            width:100%;
+        }
+
+        [class*="col-"]
+        {
+            float:left;
+            padding:10px;
+        }
+
+        
+
+          .col-1 {width: 8.33%;}
+          .col-2 {width: 16.66%;}
+          .col-3 {width: 25%;}
+          .col-4 {width: 33.33%;}
+          .col-5 {width: 41.66%;}
+          .col-6 {width: 50%;}
+          .col-7 {width: 58.33%;}
+          .col-8 {width: 66.66%;}
+          .col-9 {width: 75%;}
+          .col-10 {width: 83.33%;}
+          .col-11 {width: 91.66%;}
+          .col-12 {width: 100%;}
+
+           
+        
+
+        @media only screen and (max-width: 768px)
+        {
+            [class*="col-"]
+        {
+            width: 100%;
+        }
+        }
+ 
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+        
+
+    </style>
+</head>
+<body>
+<div class="head">
+    <h1>Abu Khalid Siddique</h1>
+</div>
+<div class="row">
+    <div class="nav col-2">
+        <ul>
+           <li> <a href="#">Home</a></li> 
+           <li> <a href="#">Profile</a></li>
+           <li> <a href="#">Contact</a></li>
+           <li> <a href="#">Research</a></li>
+        </ul>
+         
+    </div>
+
+    <div class="main col-7">
+        <h2>I am learning HTML and CSS</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus, quidem nemo consequatur nam ullam illum necessitatibus obcaecati officia quas quis consectetur placeat voluptates, qui temporibus fuga molestias distinctio sed? Labore.</p>
+        <p>I am very excited for learning</p>
+    </div>
+
+    <div class="aside col-3">
+        <h3>I like to follow w3 schools</h3>
+        <p>This website is easier and comfortable</p>
+        <p>I also take help from youtube videos</p>
+    </div>
+</div>
+
+<div class="footer">
+
+    <p>I am just practicing. </p>
+    <div class="nav2">
+        <a href="#">w3Schools</a>
+        <a href="#">Git</a>
+        <a href="#">Facebook</a>
+        <a href="#">About</a>
+
+    </div>
+</div>
+</body>
+</html>
